@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="source/form/css/style.css" rel="stylesheet">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="source/form/css/utile.css">
+	<link rel="stylesheet" type="text/css" href="source/form/css/contact.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+
+
+	<main id="main">
+
+		<!-- ======= Breadcrumbs ======= -->
+		<section id="breadcrumbs" class="breadcrumbs">
+			<div class="container">
+
+				<h1>Registration</h1>
+
+			</div>
+		</section><!-- End Breadcrumbs -->
+
+		<section class="inner-page">
+			<div class="container">
+				<div class="container-contact100">
+
+
+					<form class="contact100-form validate-form" method="POST" >
+
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Nama</span>
+							<input id="nama" type="text" class="input100" placeholder="Nama" name="Nama" required autocomplete="name" autofocus>
+
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Alamat</span>
+							<input id="alamat" type="text" class="input100" placeholder="Alamat" name="alamat" required autocomplete="alamat" autofocus>
+							
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Tempat lahir</span>
+							<input id="tempatLahir" type="text" class="input100" placeholder="Tempat lahir" name="tempatLahir" required autocomplete="tempatLahir" autofocus>
+							
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Tanggal Lahir</span>
+							<input id="tanggal" type="date" class="input100"  name="tanggal" required autocomplete="tanggal" autofocus>
+
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Jenis Kelamin</span>
+							<input id="gender" type="radio"  name="gender" required autocomplete="gender" value="Perempuan" autofocus> Perempuan
+							<input id="gender" type="radio"  name="gender" required autocomplete="gender" value="Laki-Laki" autofocus> Laki-Laki
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Hobby</span>
+							<input id="hobby" type="text" class="input100" placeholder="Hobby" name="hobby" required autocomplete="hobby" autofocus>
+							
+							<span class="focus-input100"></span> 
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="data must be filled">
+							<span class="label-input100">Pilih Pembayaran</span>
+							<select id="pembayaran" name="pembayaran" class="input100" required autocomplete="pembayaran" autofocus>
+							  <option value="1">Cash</option>
+							  <option value="2">Kredit</option>
+							</select>
+							<span class="focus-input100"></span> 
+						</div>
+
+
+						<div class="container-contact100-form-btn">
+							<div class="wrap-contact100-form-btn">
+								<div class="contact100-form-bgbtn"></div>
+								<button type="submit" class="contact100-form-btn" onclick="myFunction()">
+									Submit
+								</button>
+
+							</div>
+							<div class="wrap-contact100-form-btn">
+								<div class="contact100-form-bgbtn"></div>
+								<button type="reset" class="contact100-form-btn">
+									Reset
+								</button>
+
+							</div>
+
+						</div>
+						<br>
+
+					</form>
+
+
+				</div>
+			</div>
+		</section>
+
+	</main><!-- End #main -->
+
+
+
+	<script src="form/js/contact.js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+
+		function myFunction() {
+			if((document.getElementById("alamat").value != ""))
+  			{
+			alert("Terima kasih Anda telah mengisi data Anda")
+			}
+			else if((document.getElementById("alamat").value == "") || (document.getElementById("nama").value == "") || (document.getElementById("tempatLahir").value == "") || (document.getElementById("Hobby").value == ""))
+			{
+				alert("Ma’af, data Anda belum lengkap")
+			}
+			
+			
+  		
+		}
+	</script>
+
+	<!-- Vendor JS Files -->
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Template Main JS File -->
+	<script src="source/form/js/main.js"></script>
+
+</body>
+
+</html>
